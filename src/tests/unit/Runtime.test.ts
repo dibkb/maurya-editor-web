@@ -1,5 +1,4 @@
 export {};
-
 beforeEach(() => {
   jest.resetModules();
   jest.useFakeTimers();
@@ -65,7 +64,6 @@ test.skip("token and projectID is required by Runtime to get ready", () => {
       });
     })
     .catch((err) => {
-      // cannot be caught by this catch
       console.log(err);
     });
 });
